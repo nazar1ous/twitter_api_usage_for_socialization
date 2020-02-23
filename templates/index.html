@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    In order to see the web map of friends, fill in the following form!
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('create_web_map') }}" method="post">
+        <input type="text" name="screen_name" placeholder="Enter the screen name">
+        <button>Submit</button>
+    </form>
+{% endblock %}

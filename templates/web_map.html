@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f18fcf715db942c3aafb10fc68c58812 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f18fcf715db942c3aafb10fc68c58812" ></div>
+        
+</body>
+<script>    
+    
+            var map_f18fcf715db942c3aafb10fc68c58812 = L.map(
+                "map_f18fcf715db942c3aafb10fc68c58812",
+                {
+                    center: [49.841952, 24.0315921],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a97ec1aed7c54f39aa8f3c1dd3fea903 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f18fcf715db942c3aafb10fc68c58812);
+        
+    
+            var feature_group_927dd9ce7dae4bec960af76c4d075701 = L.featureGroup(
+                {}
+            ).addTo(map_f18fcf715db942c3aafb10fc68c58812);
+        
+    
+            var marker_8d25be45026748f3993418ee265e301e = L.marker(
+                [49.841952, 24.0315921],
+                {"color": "green"}
+            ).addTo(feature_group_927dd9ce7dae4bec960af76c4d075701);
+        
+    
+            var icon_2b6501a8ccdb444aaa9c3430ab9ddb86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d25be45026748f3993418ee265e301e.setIcon(icon_2b6501a8ccdb444aaa9c3430ab9ddb86);
+        
+    
+        var popup_e391b33107bf4a63a35efe5d134947b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44c9d9b6e1ba421a9539fd1d533e2240 = $(`<div id="html_44c9d9b6e1ba421a9539fd1d533e2240" style="width: 100.0%; height: 100.0%;">List of friends with this location: RavenbornJB,BogdanVey,viri_aldi</div>`)[0];
+            popup_e391b33107bf4a63a35efe5d134947b8.setContent(html_44c9d9b6e1ba421a9539fd1d533e2240);
+        
+
+        marker_8d25be45026748f3993418ee265e301e.bindPopup(popup_e391b33107bf4a63a35efe5d134947b8)
+        ;
+
+        
+    
+    
+            var marker_a8cc72be8eed4cc8a20359f6b33a948f = L.marker(
+                [49.4871968, 31.2718321],
+                {"color": "green"}
+            ).addTo(feature_group_927dd9ce7dae4bec960af76c4d075701);
+        
+    
+            var icon_a15e57b0d9224b1289f521ca27c5a0a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a8cc72be8eed4cc8a20359f6b33a948f.setIcon(icon_a15e57b0d9224b1289f521ca27c5a0a5);
+        
+    
+        var popup_30a3f5aa970f41ae97b8f317cfb504ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_234bb7c059d54b4194791968c9f22387 = $(`<div id="html_234bb7c059d54b4194791968c9f22387" style="width: 100.0%; height: 100.0%;">List of friends with this location: Maxymilian</div>`)[0];
+            popup_30a3f5aa970f41ae97b8f317cfb504ea.setContent(html_234bb7c059d54b4194791968c9f22387);
+        
+
+        marker_a8cc72be8eed4cc8a20359f6b33a948f.bindPopup(popup_30a3f5aa970f41ae97b8f317cfb504ea)
+        ;
+
+        
+    
+    
+            var marker_9ba7b057118a4ec4984549508b77d4eb = L.marker(
+                [48.8566969, 2.3514616],
+                {"color": "green"}
+            ).addTo(feature_group_927dd9ce7dae4bec960af76c4d075701);
+        
+    
+            var icon_0fa5d8b2f6b24572bfd1da7470943db8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ba7b057118a4ec4984549508b77d4eb.setIcon(icon_0fa5d8b2f6b24572bfd1da7470943db8);
+        
+    
+        var popup_efd2b8d4e9a44a1bab1260589b192cb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1685d619d5a442b8b1f2dbce324143c1 = $(`<div id="html_1685d619d5a442b8b1f2dbce324143c1" style="width: 100.0%; height: 100.0%;">List of friends with this location: Ceb</div>`)[0];
+            popup_efd2b8d4e9a44a1bab1260589b192cb0.setContent(html_1685d619d5a442b8b1f2dbce324143c1);
+        
+
+        marker_9ba7b057118a4ec4984549508b77d4eb.bindPopup(popup_efd2b8d4e9a44a1bab1260589b192cb0)
+        ;
+
+        
+    
+    
+            var marker_f88f72af22b64b54a00ae0a3ecbc563c = L.marker(
+                [52.7954791, -0.5402402866174321],
+                {"color": "green"}
+            ).addTo(feature_group_927dd9ce7dae4bec960af76c4d075701);
+        
+    
+            var icon_a04d8418e3744782a2fcea9addffb70b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f88f72af22b64b54a00ae0a3ecbc563c.setIcon(icon_a04d8418e3744782a2fcea9addffb70b);
+        
+    
+        var popup_79484b8a8bbf4d80b7398bb0e3571c87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ec435aeeb71482295f98f4d0c4aadb3 = $(`<div id="html_1ec435aeeb71482295f98f4d0c4aadb3" style="width: 100.0%; height: 100.0%;">List of friends with this location: Adam Clowery</div>`)[0];
+            popup_79484b8a8bbf4d80b7398bb0e3571c87.setContent(html_1ec435aeeb71482295f98f4d0c4aadb3);
+        
+
+        marker_f88f72af22b64b54a00ae0a3ecbc563c.bindPopup(popup_79484b8a8bbf4d80b7398bb0e3571c87)
+        ;
+
+        
+    
+    
+            var marker_5c4ccba3af0d4f88bb31d170dce84586 = L.marker(
+                [40.7127281, -74.0060152],
+                {"color": "green"}
+            ).addTo(feature_group_927dd9ce7dae4bec960af76c4d075701);
+        
+    
+            var icon_2cf799fee46b4782b92d2731c98bbeca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c4ccba3af0d4f88bb31d170dce84586.setIcon(icon_2cf799fee46b4782b92d2731c98bbeca);
+        
+    
+        var popup_e6eb230e3b6d40f18a96e3eab427cda8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f28cd3f7f61b4e099410b7c5c2bddd34 = $(`<div id="html_f28cd3f7f61b4e099410b7c5c2bddd34" style="width: 100.0%; height: 100.0%;">List of friends with this location: MLG</div>`)[0];
+            popup_e6eb230e3b6d40f18a96e3eab427cda8.setContent(html_f28cd3f7f61b4e099410b7c5c2bddd34);
+        
+
+        marker_5c4ccba3af0d4f88bb31d170dce84586.bindPopup(popup_e6eb230e3b6d40f18a96e3eab427cda8)
+        ;
+
+        
+    
+    
+            var marker_b4ad0096ea8342f8b43559139af897d9 = L.marker(
+                [46.162634, 16.832255155471614],
+                {"color": "green"}
+            ).addTo(feature_group_927dd9ce7dae4bec960af76c4d075701);
+        
+    
+            var icon_3b36d1112c2a4ce8823fbeb8a2bf0a5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4ad0096ea8342f8b43559139af897d9.setIcon(icon_3b36d1112c2a4ce8823fbeb8a2bf0a5a);
+        
+    
+        var popup_f76cc6e999ac4cbb8c473a571aba4b53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18d0f170b5924546949e6a100098d05e = $(`<div id="html_18d0f170b5924546949e6a100098d05e" style="width: 100.0%; height: 100.0%;">List of friends with this location: Clash of Clans</div>`)[0];
+            popup_f76cc6e999ac4cbb8c473a571aba4b53.setContent(html_18d0f170b5924546949e6a100098d05e);
+        
+
+        marker_b4ad0096ea8342f8b43559139af897d9.bindPopup(popup_f76cc6e999ac4cbb8c473a571aba4b53)
+        ;
+
+        
+    
+    
+            var marker_bc43c99408974888ba7e3ef528fe4085 = L.marker(
+                [36.7014631, -118.7559974],
+                {"color": "green"}
+            ).addTo(feature_group_927dd9ce7dae4bec960af76c4d075701);
+        
+    
+            var icon_517b527d44ef4dc7a05b439db4965cb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc43c99408974888ba7e3ef528fe4085.setIcon(icon_517b527d44ef4dc7a05b439db4965cb7);
+        
+    
+        var popup_c09fb6548d1e4ac8ab70bf6aca8e79a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b5607a1c3b540388ac9702fa3568fa0 = $(`<div id="html_5b5607a1c3b540388ac9702fa3568fa0" style="width: 100.0%; height: 100.0%;">List of friends with this location: PlayStation</div>`)[0];
+            popup_c09fb6548d1e4ac8ab70bf6aca8e79a2.setContent(html_5b5607a1c3b540388ac9702fa3568fa0);
+        
+
+        marker_bc43c99408974888ba7e3ef528fe4085.bindPopup(popup_c09fb6548d1e4ac8ab70bf6aca8e79a2)
+        ;
+
+        
+    
+    
+            var marker_671eb32ae6684ed8aa542a3610930d6e = L.marker(
+                [53.5120412, -2.2434612],
+                {"color": "green"}
+            ).addTo(feature_group_927dd9ce7dae4bec960af76c4d075701);
+        
+    
+            var icon_8908b8d7d5e443fd909ac5f78729b230 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_671eb32ae6684ed8aa542a3610930d6e.setIcon(icon_8908b8d7d5e443fd909ac5f78729b230);
+        
+    
+        var popup_b7024015f5c240e283a0ee74a7b12849 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c02ce57ae82140b8aa99a6f5ba184f67 = $(`<div id="html_c02ce57ae82140b8aa99a6f5ba184f67" style="width: 100.0%; height: 100.0%;">List of friends with this location: Ubisoft</div>`)[0];
+            popup_b7024015f5c240e283a0ee74a7b12849.setContent(html_c02ce57ae82140b8aa99a6f5ba184f67);
+        
+
+        marker_671eb32ae6684ed8aa542a3610930d6e.bindPopup(popup_b7024015f5c240e283a0ee74a7b12849)
+        ;
+
+        
+    
+</script>
