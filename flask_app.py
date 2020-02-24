@@ -16,12 +16,12 @@ def index():
 
 
 @app.route("/web_map", methods=["POST"])
-def create_web_map():
+def web_map():
     """
     Create web map
     :return: object of rendered template
     """
-    screen_name = request.form.get("name")
+    screen_name = request.form.get("screen_name")
     create_web_map_from_user_friends_location(screen_name,
                                               'templates/web_map.html')
     return render_template("web_map.html")

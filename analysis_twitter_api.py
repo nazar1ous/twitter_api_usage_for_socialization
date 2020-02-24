@@ -65,8 +65,8 @@ def create_web_map_from_user_friends_location(screen_name: str,
     """
     map = folium.Map(location=[49.841952, 24.0315921], zoom_start=6)
     main_layer = folium.FeatureGroup(name="Twitter friends locations")
-    users_coordinates = get_coordinates_from_users_data(
-        get_users_from_screen_name(screen_name))
+    users = get_users_from_screen_name(screen_name)
+    users_coordinates = get_coordinates_from_users_data(users)
     for coord in users_coordinates:
         users_names = users_coordinates[coord]
         text = "List of friends with this location: {}"\
@@ -80,4 +80,4 @@ def create_web_map_from_user_friends_location(screen_name: str,
 
 
 if __name__ == "__main__":
-    create_web_map_from_user_friends_location('nazariy_kuspys', 'new1_one.html')
+    create_web_map_from_user_friends_location('WolfHeavenly', 'new1_one.html')
