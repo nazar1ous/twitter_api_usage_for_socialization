@@ -7,12 +7,20 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    """
+    If user goes to main route, opens index.html
+    :return:
+    """
     return render_template("index.html")
     # return '<h1>Hello</h1>'
 
 
 @app.route("/web_map", methods=["POST"])
 def create_web_map():
+    """
+    Create web map
+    :return: object of rendered template
+    """
     screen_name = request.form.get("name")
     create_web_map_from_user_friends_location(screen_name,
                                               'templates/web_map.html')
@@ -20,4 +28,4 @@ def create_web_map():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
