@@ -6,7 +6,8 @@
 
 {% block body %}
     <form action="{{ url_for('web_map') }}" method="post">
-        <input type="text" name="screen_name" placeholder="Enter the screen name">
+        <input type="text" name="screen_name"
+               placeholder="Enter the screen name(username)">
         <button>Submit</button>
     </form>
 {% endblock %}
