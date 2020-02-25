@@ -55,12 +55,10 @@ def get_coordinates_from_users_data(users: object) -> dict:
     return detailed_location
 
 
-def create_web_map_from_user_friends_location(screen_name: str,
-                                              name_of_file: str):
+def get_web_map_from_user_friends_location(screen_name: str):
     """
-    Create web map from users friends location
-    :param screen_name: id of user's twitter account
-    :param name_of_file: name of html file
+    Gets web map file from user's name
+    :param screen_name: user's name in twitter
     :return: html file
     """
     map = folium.Map(location=[49.841952, 24.0315921], zoom_start=6)
@@ -76,8 +74,8 @@ def create_web_map_from_user_friends_location(screen_name: str,
                                            color='green',
                                            icon=folium.Icon()))
     map.add_child(main_layer)
-    map.save(name_of_file)
+    return map._repr_html_()
 
 
 if __name__ == "__main__":
-    create_web_map_from_user_friends_location('WolfHeavenly', 'new1_one.html')
+    print(get_web_map_from_user_friends_location('WolfHeavenly'))
